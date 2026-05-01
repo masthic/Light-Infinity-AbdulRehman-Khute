@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulrehman Khute x Ravager Of Darkness Official</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #1a0033, #000814 60%);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00e5ff, #c084fc, #ff4ecd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      margin-top: 20px;
+      color: #d1d5db;
+      font-size: 1.2rem;
+    }
+    .search-box {
+      max-width: 700px;
+      margin: 20px auto 50px;
+      display: flex;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 12px 20px;
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 1rem;
+      outline: none;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 0 30px 60px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 24px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-8px) scale(1.02); }
+    .card h2 { margin-bottom: 12px; }
+    .card p { color: #d1d5db; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abdulrehman Khute x Ravager Of Darkness Official</h1>
+    <p class="subtitle">A limitless digital universe of knowledge, creativity, and advanced exploration.</p>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search the universe..." onkeyup="filterCards()" />
+  </div>
+
+  <section class="grid" id="cards">
+    <div class="card"><h2>Cosmic Knowledge</h2><p>Explore galaxies, black holes, and the architecture of existence.</p></div>
+    <div class="card"><h2>Artificial Intelligence</h2><p>Discover machine learning, robotics, and future intelligence.</p></div>
+    <div class="card"><h2>Creative Arts</h2><p>Music, storytelling, design, and imagination without limits.</p></div>
+    <div class="card"><h2>Technology Hub</h2><p>Programming, quantum computing, and next-gen systems.</p></div>
+    <div class="card"><h2>Infinite Library</h2><p>History, philosophy, and every field of knowledge.</p></div>
+    <div class="card"><h2>Global Network</h2><p>Cultures, geography, and civilizations of the world.</p></div>
+  </section>
+
+  <footer>
+    <p>Designed as a cosmic gateway to infinite exploration.</p>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
